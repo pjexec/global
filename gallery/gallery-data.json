@@ -1,0 +1,51 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "filename": "01-moisture-reading-door-window.jpg",
+      "title": "Moisture Reading on Door/Window",
+      "description": "Testing moisture levels on thresholds and windows to detect subsurface termite activity. Professional moisture detection is critical for identifying hidden termite infestations before they cause major damage.",
+      "category": "Inspection Equipment"
+    },
+    {
+      "id": 2,
+      "filename": "02-termite-swarmers.jpg",
+      "title": "Termite Swarmers",
+      "description": "Discarded wings from termite reproductives (swarmers). These wings are a key sign of termite activity and help distinguish termites from flying ants. Swarmers emerge to start new colonies, typically in spring.",
+      "category": "Pest Identification"
+    },
+    {
+      "id": 3,
+      "filename": "03-infrared-thermal-imaging.jpg",
+      "title": "Infrared Thermal Imaging",
+      "description": "Advanced thermal imaging camera technology used to detect termites and moisture within walls without invasive inspection. This cutting-edge equipment allows us to find hidden infestations that traditional methods might miss.",
+      "category": "Inspection Equipment"
+    },
+    {
+      "id": 4,
+      "filename": "04-termite-damaged-wood.jpg",
+      "title": "Termite-Damaged Wood",
+      "description": "Soldier termites protecting compromised shelter tubes from ant invasion. This image shows the extent of damage termites can cause to wooden structures and the importance of early detection and treatment.",
+      "category": "Termite Damage"
+    },
+    {
+      "id": 5,
+      "filename": "05-shelter-tube-insulation.jpg",
+      "title": "Shelter Tube in Insulation",
+      "description": "An unusual shelter tube emerging from insulation after hardwood floor destruction. Termites build these mud tubes to travel between their colony and food sources while protecting themselves from predators and dry air.",
+      "category": "Termite Damage"
+    },
+    {
+      "id": 6,
+      "filename": "06-flying-ant-vs-termite.jpg",
+      "title": "Flying Ant vs. Termite Comparison",
+      "description": "Educational comparison chart showing the distinguishing features between flying ants and termite swarmers. Key differences include antenna shape (bent vs. straight), waist size (pinched vs. broad), and wing size (unequal vs. equal).",
+      "category": "Pest Identification"
+    }
+  ],
+  "categories": [
+    "Inspection Equipment",
+    "Pest Identification",
+    "Termite Damage"
+  ]
+}
