@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Exterminating Inc | Professional Pest Control in Berlin, MD</title>
+  <meta name="description" content="Celebrating 25+ years of excellence. Professional pest control, termite inspections, mold remediation, and more in Berlin, MD. Licensed & insured. Call (410) 208-2515.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navigation */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #16a34a 0%, #166534 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+    .logo-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .logo-text p {
+      font-size: 0.75rem;
+      color: #16a34a;
+      font-weight: 500;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-weight: 500;
+      color: #555;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #16a34a;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #16a34a 0%, #166534 100%);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(22, 101, 52, 0.3);
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .mobile-btn {
+      display: none;
+      padding: 12px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #16a34a 0%, #166534 50%, #0f172a 100%);
+      padding: 140px 24px 80px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content {
+      color: white;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      padding: 8px 16px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+    }
+
+    .hero-badge svg {
+      width: 20px;
+      height: 20px;
+      fill: #fbbf24;
+    }
+
+    .hero h2 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .hero h2 span {
+      color: #86efac;
+    }
+
+    .hero-description {
+      font-size: 1.25rem;
+      color: #bbf7d0;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-white {
+      background: white;
+      color: #166534;
+    }
+
+    .btn-white:hover {
+      background: #f0fdf4;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+    }
+
+    .hero-feature svg {
+      width: 24px;
+      height: 24px;
+      fill: #86efac;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-circle {
+      width: 320px;
+      height: 320px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .hero-circle-inner {
+      width: 256px;
+      height: 256px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-circle-center {
+      width: 192px;
+      height: 192px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    }
+
+    .hero-circle-center svg {
+      width: 96px;
+      height: 96px;
+      fill: #16a34a;
+    }
+
+    .stat-card {
+      position: absolute;
+      background: white;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .stat-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stat-card-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .stat-card-icon.green {
+      background: #dcfce7;
+    }
+
+    .stat-card-icon.green svg {
+      fill: #16a34a;
+    }
+
+    .stat-card-icon.amber {
+      background: #fef3c7;
+    }
+
+    .stat-card-icon.amber svg {
+      fill: #d97706;
+    }
+
+    .stat-card-text strong {
+      display: block;
+      font-size: 1rem;
+      color: #111;
+    }
+
+    .stat-card-text span {
+      font-size: 0.875rem;
+      color: #666;
+    }
+
+    .stat-card.top {
+      top: -16px;
+      right: 40px;
+    }
+
+    .stat-card.bottom {
+      bottom: -16px;
+      left: 40px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Services Section */
+    .services {
+      padding: 100px 24px;
+      background: #f9fafb;
+    }
+
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-label {
+      color: #16a34a;
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #111;
+      margin: 12px 0 16px;
+    }
+
+    .section-description {
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(22, 101, 52, 0.15);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .service-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .service-features {
+      list-style: none;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .service-features svg {
+      width: 20px;
+      height: 20px;
+      fill: #16a34a;
+      flex-shrink: 0;
+    }
+
+    .services-cta {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .btn-large {
+      padding: 16px 40px;
+      font-size: 1.125rem;
+    }
+
+    /* About Section */
+    .about {
+      padding: 100px 24px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-content h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #111;
+      margin: 12px 0 24px;
+    }
+
+    .about-content h2 span {
+      background: linear-gradient(135deg, #22c55e 0%, #166534 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .about-content p {
+      color: #555;
+      font-size: 1.125rem;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .stat-box {
+      text-align: center;
+      padding: 24px;
+      background: #f0fdf4;
+      border-radius: 16px;
+    }
+
+    .stat-box strong {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #16a34a;
+    }
+
+    .stat-box span {
+      color: #555;
+      font-size: 0.875rem;
+    }
+
+    .licenses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .license-badge {
+      background: #f3f4f6;
+      color: #444;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .why-choose {
+      background: linear-gradient(135deg, #16a34a 0%, #166534 100%);
+      border-radius: 24px;
+      padding: 40px;
+      color: white;
+    }
+
+    .why-choose h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .why-choose ul {
+      list-style: none;
+    }
+
+    .why-choose li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+      color: #dcfce7;
+    }
+
+    .why-choose svg {
+      width: 24px;
+      height: 24px;
+      fill: #86efac;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 100px 24px;
+      background: #111827;
+    }
+
+    .contact .section-label {
+      color: #4ade80;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact .section-description {
+      color: #9ca3af;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .contact-card {
+      background: #1f2937;
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+    }
+
+    .contact-icon {
+      width: 64px;
+      height: 64px;
+      background: #16a34a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .contact-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+
+    .contact-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .contact-card .value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #4ade80;
+    }
+
+    .contact-card .value:hover {
+      color: #86efac;
+    }
+
+    .contact-card .subtitle {
+      color: #9ca3af;
+      margin-top: 8px;
+    }
+
+    .contact-cta {
+      text-align: center;
+    }
+
+    .btn-contact {
+      background: #16a34a;
+      color: white;
+      padding: 20px 48px;
+      font-size: 1.25rem;
+    }
+
+    .btn-contact:hover {
+      background: #22c55e;
+    }
+
+    /* Footer */
+    .footer {
+      background: #030712;
+      padding: 48px 24px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #16a34a 0%, #166534 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-logo-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+    .footer-logo-text h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .footer-logo-text p {
+      font-size: 0.875rem;
+      color: #4ade80;
+    }
+
+    .footer-licenses {
+      text-align: center;
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+
+    .footer-copyright {
+      text-align: right;
+      color: #9ca3af;
+      font-size: 0.875rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .hero h2 {
+        font-size: 2.5rem;
+      }
+
+      .hero-features {
+        justify-content: center;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-btn {
+        display: flex;
+      }
+
+      .hero {
+        padding: 120px 24px 60px;
+        min-height: auto;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-logo {
+        justify-content: center;
+      }
+
+      .footer-copyright {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        </div>
+        <div class="logo-text">
+          <h1>Global Exterminating</h1>
+          <p>Celebrating 25 Years of Excellence</p>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:4102082515" class="btn btn-primary">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          (410) 208-2515
+        </a>
+      </div>
+      <a href="tel:4102082515" class="btn btn-primary mobile-btn">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <span>Celebrating 25 Years of Excellence</span>
+        </div>
+        <h2>Protect Your Home from <span>Unwanted Pests</span></h2>
+        <p class="hero-description">
+          Trusted by families across Berlin, MD and the Eastern Shore for over 25 years.
+          Professional pest control, termite inspections, and mold remediation services.
+        </p>
+        <div class="hero-buttons">
+          <a href="tel:4102082515" class="btn btn-white btn-large">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Now: (410) 208-2515
+          </a>
+          <a href="#services" class="btn btn-outline btn-large">View Services</a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <span>Licensed & Insured</span>
+          </div>
+          <div class="hero-feature">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <span>Free Estimates</span>
+          </div>
+          <div class="hero-feature">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            <span>Same Day Service</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-circle">
+          <div class="hero-circle-inner">
+            <div class="hero-circle-center">
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="stat-card top">
+          <div class="stat-card-icon amber">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </div>
+          <div class="stat-card-text">
+            <strong>1000+</strong>
+            <span>Homes Protected</span>
+          </div>
+        </div>
+        <div class="stat-card bottom">
+          <div class="stat-card-icon green">
+            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          </div>
+          <div class="stat-card-text">
+            <strong>32+ Years</strong>
+            <span>Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Comprehensive Pest Control Solutions</h2>
+        <p class="section-description">
+          From termite inspections with advanced thermal imaging to complete mold remediation,
+          we provide the full spectrum of pest control services.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          </div>
+          <h3>Termite Inspections & Treatment</h3>
+          <p>Advanced thermal imaging technology and 32+ years of inspection experience. Comprehensive protection plans available.</p>
+          <ul class="service-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Infrared Thermal Imaging
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Shelter Tube Detection
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Treatment Plans
+            </li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          </div>
+          <h3>General Pest Control</h3>
+          <p>Complete elimination of cockroaches, ants, spiders, and other common household pests with eco-friendly solutions.</p>
+          <ul class="service-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Cockroach Elimination
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Spider Control
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Ant Treatment
+            </li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          </div>
+          <h3>Mosquito & Tick Control</h3>
+          <p>Property-wide treatments to protect your family from disease-carrying mosquitoes, ticks, and fleas.</p>
+          <ul class="service-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Yard Treatments
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Tick Prevention
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Flea Control
+            </li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3>Mold Remediation</h3>
+          <p>Professional mold inspection, testing, and remediation services to protect your home and health.</p>
+          <ul class="service-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Mold Testing
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Moisture Detection
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Safe Removal
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="services-cta">
+        <a href="tel:4102082515" class="btn btn-primary btn-large">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Get a Free Quote Today
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-label">About Us</span>
+          <h2>25+ Years Protecting <span>Eastern Shore Homes</span></h2>
+          <p>
+            Global Exterminating Inc. has been the trusted choice for pest control in Berlin, MD
+            and the surrounding Eastern Shore communities. With over 32 years of personal inspection
+            experience, our owner brings unmatched expertise to every job.
+          </p>
+          <p>
+            We use the latest technology, including infrared thermal imaging cameras for termite
+            detection, to ensure the most thorough inspections possible. Our commitment to
+            excellence has made us the go-to choice for homeowners and real estate professionals alike.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <strong>25+</strong>
+              <span>Years in Business</span>
+            </div>
+            <div class="stat-box">
+              <strong>32</strong>
+              <span>Years Experience</span>
+            </div>
+            <div class="stat-box">
+              <strong>3</strong>
+              <span>State Licenses</span>
+            </div>
+          </div>
+          <div class="licenses">
+            <span class="license-badge">License: MDA 24184</span>
+            <span class="license-badge">License: DDA 809</span>
+            <span class="license-badge">License: VDA 6214</span>
+          </div>
+        </div>
+        <div class="why-choose">
+          <h3>Why Choose Us?</h3>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Advanced thermal imaging technology for accurate termite detection
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Over 32 years of hands-on inspection experience
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Fully licensed in Maryland, Delaware, and Virginia
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Comprehensive termite protection plans available
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Fast response times and flexible scheduling
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Eco-friendly treatment options available
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Free estimates on all services
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              Satisfaction guaranteed on every job
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Contact Us</span>
+        <h2 class="section-title">Ready to Protect Your Home?</h2>
+        <p class="section-description">
+          Get in touch today for a free estimate. Our team is ready to help you with all your pest control needs.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <h3>Call Us</h3>
+          <a href="tel:4102082515" class="value">(410) 208-2515</a>
+          <p class="subtitle">Mon-Fri: 9AM - 5PM</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <h3>Location</h3>
+          <p class="value">Berlin, MD 21811</p>
+          <p class="subtitle">Serving the Eastern Shore</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          </div>
+          <h3>Business Hours</h3>
+          <p class="value">Mon-Fri: 9AM - 5PM</p>
+          <p class="subtitle">Sat: Closed | Sun: Closed</p>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <a href="tel:4102082515" class="btn btn-contact">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Now for Free Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <div class="footer-logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        </div>
+        <div class="footer-logo-text">
+          <h3>Global Exterminating Inc.</h3>
+          <p>Celebrating 25 Years of Excellence</p>
+        </div>
+      </div>
+      <div class="footer-licenses">
+        Licensed: MDA 24184 | DDA 809 | VDA 6214
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Global Exterminating Inc. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
